@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+
+$Fira-sans: "Fira Sans", sans-serif;
+$flat-pink: #ab5e52;
+$reddesh:#87191D;
+$flat-blue:#312C31;
+$transparent-blue: rgba(107, 112, 137, 0.8);
+$gold:#ffc400;
+@mixin font {
+  font-family: $Fira-sans;
+  font-size: 2rem;
+}
+body {
+  background:#60758A;
+
+  .game {
+    position: relative;
+    left: 10rem;
+    top: 3rem;
+    padding: 20px;
+    width: 70%;
+    height: 30rem;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+%letter-bar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.list{
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  padding: 0 50px 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    @include font;
+    color: rgb(255, 255, 255);
+    @extend %letter-bar;
+    background: $flat-pink;
+    text-transform: uppercase;
+  }
+}

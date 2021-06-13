@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.missed-letters {
+    position: absolute;
+    top: 3rem;
+    right: 10rem;
+    
+    .title {
+        @include font;
+
+        letter-spacing: 2px;
+        color: $reddesh;
+    }
+    div {
+        @include font;
+        float: right;
+        color: $flat-blue;
+        margin: 10px;
+        text-transform: uppercase;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
